@@ -9,4 +9,7 @@ public interface StudentSerivce {
 
     Student saveStudent(Student student);
 
+   Student getStudentById(Long id);
+    Student updateStudent(Student student);
+
 }
