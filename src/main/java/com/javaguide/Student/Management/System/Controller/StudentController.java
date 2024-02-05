@@ -60,4 +60,11 @@ public class StudentController {
        studentSerivce.updateStudent(existingStudent);
        return "redirect:/students";
    }
+
+   //handler method to handle delete student request
+   @GetMapping("/students/{id}")
+    public String deleteStudent(@PathVariable Long id){
+        studentSerivce.deleteStudentById(id);
+        return "redirect:/students";
+   }
 }
